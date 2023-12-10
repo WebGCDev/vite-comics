@@ -9,7 +9,7 @@
 @use './../assets/styles/partials/variables.scss' as *;
 
 main {
-    background-color: black;
+    background-color: #1c1c1c;
     height: 6rem;
 }
 </style>
