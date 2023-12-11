@@ -1,5 +1,4 @@
 <script>
-export default {};
 </script>
 
 <template>
@@ -8,7 +7,7 @@ export default {};
             <img src="../assets/img/dc-logo.png" alt="">
             <ul class="head_list">
                 <li>CHARACTER</li>
-                <li>COMICS</li>
+                <li class="bluemode">COMICS</li>
                 <li>MOVIES</li>
                 <li>TV</li>
                 <li>GAMES</li>
@@ -29,14 +28,20 @@ header {
     background-color: white;
 }
 
+.bluemode {
+    &:hover {
+        color: #0282f9;
+        cursor: pointer;
+    }
+}
+
 nav {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     height: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2rem;
 }
 
 .head_list {
@@ -53,6 +58,6 @@ li {
 
 img {
     width: 6%;
-    padding-left: 1rem;
+    margin: 0 0 0 -123px;
 }
 </style>

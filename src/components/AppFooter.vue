@@ -1,5 +1,11 @@
 <script>
-export default {};
+export default {
+    data() {
+        return {
+
+        }
+    }
+};
 </script>
 
 <template>
@@ -12,7 +18,7 @@ export default {};
                 </div>
                 <div class="option">
                     <img src="../assets/img/buy-comics-merchandise.png" alt="">
-                    <p>MERCHANDISE</p>
+                    <p>DC MERCHANDISE</p>
                 </div>
                 <div class="option">
                     <img src="../assets/img/buy-comics-subscriptions.png" alt="">
@@ -132,8 +138,10 @@ export default {};
     background-image: url('../assets/img/footer-bg.jpg');
     overflow: hidden;
 
+    .image {}
+
     .contacts {
-        height: 16rem;
+        height: 20rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -195,6 +203,8 @@ export default {};
 
         h3 {
             color: #0282f9;
+            font-size: 1.3rem;
         }
     }
-}</style>
+}
+</style>
