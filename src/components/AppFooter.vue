@@ -2,7 +2,6 @@
 export default {
     data() {
         return {
-
         }
     }
 };
@@ -137,8 +136,6 @@ export default {
 .footer-mid {
     background-image: url('../assets/img/footer-bg.jpg');
     overflow: hidden;
-
-    .image {}
 
     .contacts {
         height: 20rem;

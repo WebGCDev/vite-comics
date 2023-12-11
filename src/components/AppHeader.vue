@@ -1,4 +1,11 @@
 <script>
+export default {
+    data() {
+        return {
+
+        }
+    }
+};
 </script>
 
 <template>
@@ -32,6 +39,7 @@ header {
     &:hover {
         color: #0282f9;
         cursor: pointer;
+        border-bottom: 4px solid #0282f9;
     }
 }
 
