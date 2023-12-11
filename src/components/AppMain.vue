@@ -89,6 +89,7 @@ export default {
             <app-comics v-for="comic in arrComics" :key="comic.series" :urlImg="comic.thumb" :price="comic.price"
                 :series="comic.series" />
         </div>
+        <button>LOAD MORE</button>
     </main>
 </template>
 
@@ -97,6 +98,19 @@ export default {
 
 main {
     background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        background-color: #0282f9;
+        color: white;
+        padding: .7rem;
+        width: 12rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 
     .contents {
         flex-wrap: wrap;
