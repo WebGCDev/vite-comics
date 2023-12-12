@@ -99,7 +99,7 @@ header {
     button {
         position: absolute;
         bottom: -1.2rem;
-        left: 22rem;
+        left: 23rem; //Mi sembra piu bello cosi della bozza
         background-color: #0282f9;
         padding: 1rem;
         width: 12rem;
