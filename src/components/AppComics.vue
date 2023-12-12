@@ -24,17 +24,20 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1rem;
 
     img {
         width: 100%;
         height: 100%;
     }
 
-    h3 {
-        color: white;
-        font-size: .7rem;
-        white-space: wrap;
-        padding-top: .5rem;
+    .text-container {
+        h3 {
+            color: white;
+            font-size: .7rem;
+            white-space: wrap;
+            padding-top: .5rem;
+        }
     }
 }
 </style>

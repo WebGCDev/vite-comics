@@ -128,7 +128,7 @@ export default {
             color: white;
             padding-inline: .7rem;
             white-space: nowrap;
-            font-size: .7rem;
+            font-size: .9rem;
         }
     }
 }
@@ -200,7 +200,7 @@ export default {
 
         h3 {
             color: #0282f9;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
         }
     }
 }

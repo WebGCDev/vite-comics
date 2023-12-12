@@ -1,7 +1,51 @@
 <script>
+import AppNavbar from './AppNavbar.vue';
 export default {
+    components: { AppNavbar },
     data() {
         return {
+            arrList: [
+                {
+                    title: 'CHARACTERS',
+                    link: '#',
+                },
+                {
+                    title: 'COMICS',
+                    link: '#',
+                },
+                {
+                    title: 'MOVIES',
+                    link: '#',
+                },
+                {
+                    title: 'TV',
+                    link: '#',
+                },
+                {
+                    title: 'GAMES',
+                    link: '#',
+                },
+                {
+                    title: 'COLLECTIBLES',
+                    link: '#',
+                },
+                {
+                    title: 'VIDEOS',
+                    link: '#',
+                },
+                {
+                    title: 'FANS',
+                    link: '#',
+                },
+                {
+                    title: 'NEWS',
+                    link: '#',
+                },
+                {
+                    title: 'SHOP',
+                    link: '#',
+                },
+            ]
 
         }
     }
@@ -10,21 +54,14 @@ export default {
 
 <template>
     <header>
-        <nav>
-            <img src="../assets/img/dc-logo.png" alt="">
-            <ul class="head_list">
-                <li>CHARACTER</li>
-                <li class="bluemode">COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
-            </ul>
-        </nav>
+        <div class="head-container">
+            <div class="nav-container">
+                <img src="../assets/img/dc-logo.png" alt="">
+            </div>
+            <app-navbar v-for="title in arrList" :key="title.title" :title="title.title" :link="title.link" />
+        </div>
+        <div class="jumbo"></div>
+        <button><a href="">CURRENT SERIES</a></button>
     </header>
 </template>
 
@@ -32,40 +69,46 @@ export default {
 @use './../assets/styles/partials/variables.scss' as *;
 
 header {
+    position: relative;
     background-color: white;
-}
 
-.bluemode {
-    &:hover {
-        color: #0282f9;
-        cursor: pointer;
-        border-bottom: 4px solid #0282f9;
+    .head-container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+
+        .nav-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            height: 6rem;
+            background-color: white;
+
+            img {
+                width: 28%;
+            }
+        }
     }
-}
 
-nav {
-    max-width: 1000px;
-    margin: auto;
-    height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    .jumbo {
+        background-image: url('../assets/img/jumbotron.jpg');
+        background-size: cover;
+        height: 25rem;
+    }
 
-.head_list {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    padding-inline: 1rem;
-    font-size: .7rem;
-}
+    button {
+        position: absolute;
+        bottom: -1.2rem;
+        left: 22rem;
+        background-color: #0282f9;
+        padding: 1rem;
+        width: 12rem;
+        font-weight: 1000;
 
-li {
-    padding-inline: 1rem;
-}
-
-img {
-    width: 6%;
-    margin: 0 0 0 -123px;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
 </style>
